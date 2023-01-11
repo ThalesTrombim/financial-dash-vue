@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+  color: #0f1622;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.text-gray {
+  color: #B4BCC6;
+}
+.text-white {
+  color: #FFF;
+}
+.text-blue-gray {
+  color: #8F9BAC;
+}
+.tex-blue {
+  color: #8324FF;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+.text-md {
+  font-size: 16px;
+}
+.text-lg {
+  font-size: 24px;
+}
