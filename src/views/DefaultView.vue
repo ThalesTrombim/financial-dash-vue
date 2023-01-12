@@ -7,3 +7,9 @@ import SideBar from '../components/SideBar/SideBar.vue';
 		<side-bar />
 	</div>
 </template>
+
+<style>
+.defaultview--container {
+	display: flex;
+}
+</style>

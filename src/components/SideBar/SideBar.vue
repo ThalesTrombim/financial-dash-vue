@@ -4,13 +4,47 @@ import NavItem from './components/NavItem.vue';
 
 <template>
   <div class="sidebar--container">
-    <nav-item />
+    <div class="sidebar-nav--content">
+      <h1>Logo</h1>
+      <ul class="sidebar-nav--items">
+        <li>
+          <nav-item 
+            label="Dashboard"
+            icon="Speedometer"
+            page-id="dash"
+            url="#"
+            isActive
+          />
+        </li>
+        <li>
+          <nav-item 
+            label="Dashboard"
+            icon="Speedometer"
+            page-id="dash"
+            url="#"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-down">
+      outros items
+    </div>
   </div>
 </template>
 
 <style scoped>
 .sidebar--container {
-  /* background-color: #fafafa; */
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  height: 100vh;
+}
+.sidebar-nav--items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 2px;
 }
 </style>
