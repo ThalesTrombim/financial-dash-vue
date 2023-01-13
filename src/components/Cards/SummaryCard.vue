@@ -7,7 +7,7 @@ interface SummaryCardPropsTypes {
 }
 
 withDefaults(defineProps<SummaryCardPropsTypes>(), {
-  isActive: true
+  isActive: false
 })
 </script>
 
@@ -34,6 +34,7 @@ withDefaults(defineProps<SummaryCardPropsTypes>(), {
   gap: 10px;
   min-width: 200px;
   border-radius: 10px;
+  background: #f8f8f8;
 }
 .summary--content {
   p {
@@ -54,7 +55,7 @@ withDefaults(defineProps<SummaryCardPropsTypes>(), {
   justify-content: center;
   padding: 10px;
   border-radius: 50px;
-  background-color: #FAFAFA;
+  background-color: #ece8e8;
 }
 .is-active-icon {
   background: #FFF;
