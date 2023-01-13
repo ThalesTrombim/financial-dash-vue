@@ -13,7 +13,7 @@ import DashView from './DashView.vue';
 	</div>
 </template>
 
-<style>
+<style scoped>
 .defaultview--container {
 	display: flex;
 }

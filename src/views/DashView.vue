@@ -11,14 +11,17 @@ import SummaryCard from '../components/Cards/SummaryCard.vue'
       <summary-card 
         label="Total balance"
         icon="Speedometer"
-        :amount="40"
+        :amount="40.289"
       />
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
 .dash-view--container {
   padding: 24px;
+}
+.summary--content {
+  margin-top: 40px;
 }
 </style>
