@@ -33,6 +33,21 @@ import TransactionsItems from './components/TransactionsItems.vue'
       <div class="transactions-card--content--items">
         <transactions-items 
           name="Iphone 11"
+          brand="Apple. Inc"
+          type="Mobile"
+          :amount="3339"
+          date="24/12/2022"
+        />
+        <transactions-items 
+          name="Netflix subscription"
+          brand="Netflix"
+          type="Entertainment"
+          :amount="3339"
+          date="24/12/2022"
+        />
+        <transactions-items 
+          name="Iphone 11"
+          brand="Apple. Inc"
           type="Mobile"
           :amount="3339"
           date="24/12/2022"
@@ -71,6 +86,7 @@ import TransactionsItems from './components/TransactionsItems.vue'
       display: flex;
       width: 100%;
       margin-top: 24px;  
+      margin-bottom: 12px;
 
       .desc {
         display: flex;
@@ -80,6 +96,12 @@ import TransactionsItems from './components/TransactionsItems.vue'
       :nth-child(1) {
         justify-content: flex-start;
       }
+    }
+
+    &--items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
   }
 }

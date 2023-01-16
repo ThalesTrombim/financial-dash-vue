@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 interface TransactionsItemsPropsTypes {
   name: string
+  brand: string
   type: string
   amount: number
   date: string
@@ -12,11 +13,16 @@ defineProps<TransactionsItemsPropsTypes>();
 
 <template>
   <div class="transactions-items--container">
-    <div class="transactions-items--name">
+    <div class="transactions-items--name text-sm">
       <img src="https://http2.mlstatic.com/D_NQ_NP_2X_821379-MLA46114620180_052021-F.webp" alt="">
-      <text-base>
-        {{ name }}
-      </text-base>
+      <div>
+        <text-base>
+          {{ name }}
+        </text-base>
+        <text-base class="text-gray text-xsm">
+          {{ brand }}
+        </text-base>
+      </div>
     </div>
     <div class="transactions-items--type text-gray">
       {{ type }}
