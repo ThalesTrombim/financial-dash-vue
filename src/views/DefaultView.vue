@@ -6,7 +6,7 @@ import DashView from './DashView.vue';
 
 <template>
 	<div class="defaultview--container">
-		<side-bar />
+		<side-bar class="defaultview--sidebar"/>
 		<div class="views--area">
 			<component :is="DashView" />
 		</div>
@@ -16,5 +16,11 @@ import DashView from './DashView.vue';
 <style scoped>
 .defaultview--container {
 	display: flex;
+}
+.defaultview--sidebar {
+	width: 20%;
+}
+.views--area {
+	width: 80%;
 }
 </style>

@@ -24,6 +24,7 @@ import TransactiosCard from '../components/Cards/TransactionsCard/TransactiosCar
 <style scoped>
 .dash-view--container {
   padding: 24px;
+  background: red;
 }
 .summary--content {
   margin-top: 40px;

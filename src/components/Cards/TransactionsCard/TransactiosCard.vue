@@ -11,6 +11,22 @@
         <mdicon name="ChevronRight" size="20" class="text-blue"/>
       </a>
     </div>
+    <div class="transactions-card--content">
+      <div class="transactions-card--content--desc text-gray">
+        <text-base class="desc">
+          NOME
+        </text-base>
+        <text-base class="desc">
+          TIPO
+        </text-base>
+        <text-base class="desc">
+          VALOR
+        </text-base>
+        <text-base class="desc">
+          DATA
+        </text-base>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,9 +36,12 @@
     border: 1px solid #ece8e8;
     border-radius: 10px;
     padding: 20px;
+    width: 100%;
   }
 
   &--header { 
+    display: flex;
+    justify-content: space-between;
     a {
       display: flex;
       align-items: center;
@@ -31,6 +50,23 @@
 
       &:hover {
         filter: brightness(2);
+      }
+    }
+  }
+
+  &--content {
+    &--desc {
+      display: flex;
+      width: 100%;
+
+      .desc {
+        display: flex;
+        width: 25%;
+        justify-content: center;
+      }
+
+      :nth-child(1) {
+        justify-content: flex-start;
       }
     }
   }

@@ -21,7 +21,6 @@ withDefaults(defineProps<NavItemsPropsTypes>(), {
 
 <style lang="scss" scoped>
 .nav-item--container {
-  width: 150px;
   padding: 10px;
   padding-bottom: 12px;
   display: flex;

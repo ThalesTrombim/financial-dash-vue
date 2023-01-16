@@ -27,7 +27,7 @@ withDefaults(defineProps<SummaryCardPropsTypes>(), {
   </div>
 </template>
 
-<style lang="scss" setup>
+<style lang="scss" scoped>
 .summary--container {
   display: flex;
   padding: 20px;
