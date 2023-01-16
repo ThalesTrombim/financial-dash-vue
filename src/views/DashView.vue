@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import SummaryCard from '../components/Cards/SummaryCard.vue'
+import TransactiosCard from '../components/Cards/TransactionsCard/TransactiosCard.vue';
 </script>
 
 <template>
@@ -13,6 +14,9 @@ import SummaryCard from '../components/Cards/SummaryCard.vue'
         icon="Speedometer"
         :amount="40.289"
       />
+    </div>
+    <div class="transactions--content">
+      <transactios-card />
     </div>
   </div>
 </template>
