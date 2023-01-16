@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import TransactionsItems from './components/TransactionsItems.vue'
+</script>
+
 <template>
   <div class="transactions-card--container">
     <div class="transactions-card--header">
@@ -25,6 +29,14 @@
         <text-base class="desc">
           DATA
         </text-base>
+      </div>
+      <div class="transactions-card--content--items">
+        <transactions-items 
+          name="Iphone 11"
+          type="Mobile"
+          :amount="3339"
+          date="24/12/2022"
+        />
       </div>
     </div>
   </div>
@@ -58,13 +70,13 @@
     &--desc {
       display: flex;
       width: 100%;
+      margin-top: 24px;  
 
       .desc {
         display: flex;
         width: 25%;
         justify-content: center;
       }
-
       :nth-child(1) {
         justify-content: flex-start;
       }
