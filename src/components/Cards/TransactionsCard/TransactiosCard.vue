@@ -3,7 +3,7 @@ import TransactionsItems from './components/TransactionsItems.vue'
 </script>
 
 <template>
-  <div class="transactions-card--container">
+  <Box>
     <div class="transactions-card--header">
       <text-title-card>
         Transações recentes
@@ -54,18 +54,11 @@ import TransactionsItems from './components/TransactionsItems.vue'
         />
       </div>
     </div>
-  </div>
+  </Box>
 </template>
 
 <style lang="scss" scoped>
 .transactions-card {
-  &--container {
-    border: 1px solid #ece8e8;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-  }
-
   &--header { 
     display: flex;
     justify-content: space-between;
