@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import SummaryCard from '../components/Cards/SummaryCard.vue'
 import TransactiosCard from '../components/Cards/TransactionsCard/TransactiosCard.vue';
+import LineChart from '../components/LineChart/LineChart.vue';
 </script>
 
 <template>
@@ -17,6 +18,9 @@ import TransactiosCard from '../components/Cards/TransactionsCard/TransactiosCar
     </div>
     <div class="transactions--content">
       <transactios-card />
+    </div>
+    <div class="char--container">
+      <LineChart />
     </div>
   </div>
 </template>
